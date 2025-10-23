@@ -1,0 +1,44 @@
+/* Reset leve para melhorar aparência */
+* { box-sizing: border-box; }              /* inclui borda/padding no cálculo de largura */
+body { margin: 0; }                        /* remove margem padrão do body */
+
+/* Área central do site */
+.box {
+  max-width: 960px;                        /* limita largura máxima */
+  margin: 24px auto;                       /* centraliza na tela */
+  padding: 0 16px;                         /* respiro lateral */
+}
+
+/* Estilo dos grupos expansíveis */
+details {
+  background: #c01616;                     /* vermelho do cabeçalho */
+  color: #fff;                             
+  border-radius: 16px;                     /* cantos arredondados */
+  overflow: hidden;                        /* evita “vazar” cantos */
+  margin: 12px 0;                          /* espaçamento vertical */
+}
+summary {
+  padding: 12px 18px;                      /* espaço interno */
+  font-weight: 700;                        /* negrito */
+  cursor: pointer;                         /* cursor mãozinha */
+}
+.grupo {
+  background: #e83d3d;                     /* tom mais claro para o conteúdo */
+  padding: 10px 16px 16px;                 /* espaço interno */
+}
+.grupo label {
+  display: inline-block;                   /* lado a lado */
+  margin: 6px 10px;                        /* espaçamento entre checkboxes */
+}
+
+/* Botão principal */
+button {
+  background: #0b9444;                     /* verde */
+  color: #fff;                             
+  border: none;                             /* sem borda */
+  padding: 12px 18px;                       /* tamanho confortável */
+  border-radius: 12px;                      /* arredondado */
+  font-weight: 700;                         /* negrito */
+  cursor: pointer;                          /* cursor mãozinha */
+}
+button:hover { filter: brightness(0.95); }  /* leve efeito no hover */

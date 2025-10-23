@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../bolinho/style.css">
+  <title>Fala Chef - Bolinho de Chuva</title>
+</head>
+<body>
+<!-- HEADER -->
+  <header>
+    <div class="header-container">
+      <div class="back-btn">
+        <a href="../index.html"><img src="../images/seta.png" alt="Voltar"></a>
+      </div>
+      <div class="logo">
+        <img src="../images/falachef.png" alt="Fala Chef">
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li>
+          <a href="#">Receitas ▼</a>
+          <ul class="dropdown">
+            <li><a href="../receitas/doce/index.html">Doces</a></li>
+            <li><a href="../receitas/salgado/index.html">Salgados</a></li>
+          </ul>
+        </li>
+        <li><a href="../arte/artecultura.html">Arte e Cultura</a></li>
+        <li><a href="../noticias.html">Notícias</a></li>
+        <li><a href="../drinks completo (1)/drinks/index.html">Drinks</a></li>
+        <li><a href="../php/nadispensa.php">Na Despensa</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<div class="main-content">
+  <div class="recipes-page-title">
+    <h2>Saiba tudo sobre o Bolinho de Chuva</h2>
+    <p>Uma delícia da culinária brasileira que conquista gerações há décadas</p>
+  </div>
+
+  <div class="recipes-section">
+    <!-- Carrossel de variações -->
+    <section class="carrossel-section">
+      <h2>Variações do Bolinho de Chuva</h2>
+      <div class="carousel">
+        <div class="carousel-item" data-recipe="classico">
+          <img src="../images/bolinho (2).jpg" alt="Bolinho de Chuva Clássico">
+          <a href="#" class="recipe-link">Clássico</a>
+        </div>
+        <div class="carousel-item" data-recipe="canela-acucar">
+          <img src="../images/docecanela.jpg" alt="Bolinho recheado com doce de leite">
+          <a href="#" class="recipe-link">Com Doce de Leite</a>
+    </section>
+
+    <!-- Seções informativas -->
+    <section class="info-sections">
+      <div class="info-card curiosidades">
+        <div class="info-header">
+          <h2>Curiosidades</h2>
+        </div>
+        <p>
+          O bolinho de chuva é uma receita tradicional brasileira que remonta ao período colonial. 
+          Seu nome vem do formato irregular dos bolinhos, que se assemelham a gotas de chuva caindo. 
+          Era uma receita econômica feita com ingredientes básicos que toda família tinha em casa: 
+          farinha, ovos, leite e açúcar.
+        </p>
+      </div>
+
+      <div class="info-card dicas">
+        <div class="info-header">
+          <h2>Dicas do Chef</h2>
+        </div>
+        <ul>
+          <li>Use óleo bem quente para os bolinhos ficarem dourados por fora e macios por dentro</li>
+          <li>Não mexa demais a massa para não deixá-la pesada</li>
+          <li>Use duas colheres para formar os bolinhos - uma para pegar a massa e outra para empurrar no óleo</li>
+          <li>Sirva ainda quente para aproveitar o melhor sabor e textura</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Área para exibir receitas -->
+    <section id="recipe-display" class="recipe-display">
+      <div class="recipe-container">
+        <div class="recipe-title">
+          <h1>Selecione uma variação</h1>
+          <p class="description">Clique em um dos bolinhos acima para visualizar os ingredientes e modo de preparo</p>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<footer>
+  © 2025 - Fala Chef™ - Todos os direitos reservados
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

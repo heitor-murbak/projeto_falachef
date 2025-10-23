@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Fala Chef - Sushi Brasileiro</title>
+</head>
+<body>
+<!-- HEADER -->
+  <header>
+    <div class="header-container">
+      <div class="back-btn">
+        <a href="../index.html"><img src="../images/seta.png" alt="Voltar"></a>
+      </div>
+      <div class="logo">
+        <img src="../images/falachef.png" alt="Fala Chef">
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li>
+          <a href="#">Receitas ▼</a>
+          <ul class="dropdown">
+            <li><a href="../receitas/doce/index.html">Doces</a></li>
+            <li><a href="../receitas/salgado/index.html">Salgados</a></li>
+          </ul>
+        </li>
+        <li><a href="../arte/artecultura.html">Arte e Cultura</a></li>
+        <li><a href="../noticias.html">Notícias</a></li>
+        <li><a href="../drinks completo (1)/drinks/index.html">Drinks</a></li>
+        <li><a href="../php/nadispensa.php">Na Despensa</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<div class="main-content">
+  <div class="recipes-page-title">
+    <h2>Sushi: A adaptação da culinária japonesa para o Brasil</h2>
+    <p>Como o sushi se transformou no Brasil e receitas adaptadas ao paladar brasileiro</p>
+  </div>
+
+  <div class="recipes-section">
+    <!-- Carrossel de pratos -->
+    <section class="carrossel-section">
+      <h2>Sushis Brasileiros</h2>
+      <div class="carousel">
+        <div class="carousel-item" data-recipe="hot-roll">
+          <img src="../images/hot-roll.jpg" alt="Hot Roll">
+          <a href="#" class="recipe-link">Hot Roll</a>
+        </div>
+        <div class="carousel-item" data-recipe="sushi-tropical">
+          <img src="../images/tropical.jpg" alt="Sushi Tropical">
+          <a href="#" class="recipe-link">Sushi Tropical</a>
+        </div>
+        <div class="carousel-item" data-recipe="temaki">
+          <img src="../images/temaki.jpg" alt="Temaki">
+          <a href="#" class="recipe-link">Temaki</a>
+        </div>
+        <div class="carousel-item" data-recipe="camarao-empanado">
+          <img src="../images/camarao.jpg" alt="Camarão Empanado">
+          <a href="#" class="recipe-link">Camarão Empanado</a>
+        </div>
+        <div class="carousel-item" data-recipe="hot-roll-doce">
+          <img src="../images/hot-doce.jpg" alt="Hot Roll Doce">
+          <a href="#" class="recipe-link">Hot Roll Doce</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seções informativas -->
+    <section class="info-sections">
+      <div class="info-card curiosidades">
+        <div class="info-header">
+          <h2>Curiosidades</h2>
+        </div>
+        <p>
+          O sushi chegou ao Brasil com a imigração japonesa no início do século XX, mas só se popularizou 
+          nas décadas de 1980 e 1990. A adaptação ao paladar brasileiro criou versões únicas como o hot roll 
+          (frito e com cream cheese) e combinações com frutas tropicais como manga e abacaxi.
+        </p>
+      </div>
+
+      <div class="info-card dicas">
+        <div class="info-header">
+          <h2>Dicas do Chef</h2>
+        </div>
+        <ul>
+          <li>Use arroz para sushi de grão curto para melhor textura</li>
+          <li>Mantenha as mãos úmidas ao manipular o arroz</li>
+          <li>Experimente ingredientes brasileiros como manga e palmito</li>
+          <li>Sirva com molho shoyu, wasabi e gengibre em conserva</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Área para exibir receitas -->
+    <section id="recipe-display" class="recipe-display">
+      <div class="recipe-container">
+        <div class="recipe-title">
+          <h1>Selecione uma receita</h1>
+          <p class="description">Clique em um dos sushis acima para visualizar os ingredientes e modo de preparo</p>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<footer>
+  © 2025 - Fala Chef™ - Todos os direitos reservados
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

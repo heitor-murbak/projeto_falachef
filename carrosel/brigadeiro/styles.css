@@ -1,0 +1,387 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fdf6ec;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER */
+header {
+  background: #F0E6DA;
+  padding: 10px 0 0 0;
+  text-align: center;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.back-btn {
+  position: absolute;
+  left: 20px;
+}
+
+.back-btn img {
+  width: 35px;
+}
+
+header .logo img {
+  max-width: 180px;
+}
+
+/* MENU */
+nav {
+  margin-top: 10px;
+  border-top: 1px solid #C2A962;
+  border-bottom: 1px solid #C2A962;
+  padding: 8px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  position: relative;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 6px 10px;
+  display: inline-block;
+}
+
+nav ul li a:hover {
+  color: #a52a2a;
+}
+
+/* Título da página */
+.recipes-page-title {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.recipes-page-title h2 {
+  font-size: 28px;
+  color: #6a4a2b;
+  font-weight: bold;
+}
+
+.recipes-page-title p {
+  font-size: 16px;
+  color: #4d2c1c;
+  margin-top: 5px;
+}
+
+/* DROPDOWN */
+nav ul li .dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #F0E6DA;
+  border: 1px solid #C2A962;
+  border-radius: 5px;
+  min-width: 180px;
+  z-index: 10;
+}
+
+nav ul li .dropdown li {
+  width: 100%;
+}
+
+nav ul li .dropdown li a {
+  display: block;
+  padding: 10px;
+  font-size: 14px;
+  color: #000;
+}
+
+nav ul li .dropdown li a:hover {
+  background: #C2A962;
+  color: white;
+  border-radius: 5px;
+}
+
+nav ul li:hover .dropdown {
+  display: block;
+}
+
+/* SEÇÃO DE RECEITAS / SLIDER */
+.recipes-section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 20px;
+  background-color: #f7f0e6;
+  border-top: 1px solid #c2a962;
+  border-bottom: 1px solid #c2a962;
+  flex-grow: 1;
+}
+
+.slider-container {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-images {
+  display: flex;
+  align-items: center;
+  gap: 21px;
+}
+
+.slider-img {
+  width: 110px;
+  border-radius: 6px;
+  cursor: pointer;
+  position: relative;
+  transition: 0.7s ease;
+  overflow: hidden;
+}
+
+.slider-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.slider-images .slider-img:first-child,
+.slider-images .slider-img:last-child {
+  height: 440px;
+}
+
+.slider-images .slider-img:nth-child(2),
+.slider-images .slider-img:nth-child(6) {
+  height: 500px;
+}
+
+.slider-images .slider-img:nth-child(3),
+.slider-images .slider-img:nth-child(4),
+.slider-images .slider-img:nth-child(5) {
+  height: 605px;
+}
+
+.slider-img h1 {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: left;
+  text-transform: uppercase;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: -10%;
+  transform: rotate(270deg);
+  transition: 0.7s ease;
+}
+
+.slider-img.active {
+  width: 630px !important;
+  height: 650px !important;
+}
+
+.slider-img.active h1 {
+  display: none;
+}
+
+.slider-img.active::after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 60px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: bounce 1.2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(5px); }
+}
+
+.brigadeiro-detalhes {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  text-align: center;
+  display: none;
+  max-width: 800px;
+  margin-inline: auto;
+}
+
+.brigadeiro-detalhes.active {
+  display: block;
+}
+
+.brigadeiro-detalhes h2 {
+  font-size: 48px;
+  margin-bottom: 10px;
+  color: #6a4a2b;
+}
+
+.brigadeiro-detalhes h3 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #6a4a2b;
+}
+
+.brigadeiro-detalhes p {
+  font-size: 20px;
+  color: #6a4a2b;
+}
+
+/* SUB-MENU */
+.sub-menu {
+  background: #f0e6da;
+  border-top: 1px solid #c2a962;
+  border-bottom: 1px solid #c2a962;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+.sub-menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.sub-menu ul li a {
+  text-decoration: none;
+  color: #4d2c1c;
+  font-weight: 500;
+  font-size: 15px;
+  transition: color 0.3s, border-bottom 0.3s;
+  padding-bottom: 3px;
+}
+
+.sub-menu ul li a:hover {
+  color: #a52a2a;
+  border-bottom: 2px solid #a52a2a;
+}
+
+/* SEÇÕES GERAIS */
+.info-section {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.info-section h3 {
+  font-size: 28px;
+  color: #4d2c1c;
+  margin-bottom: 15px;
+}
+
+.container-section {
+  background: #fffaf5;
+  border-radius: 10px;
+  padding: 40px;
+  margin: 30px auto;
+  max-width: 900px;
+  box-shadow: 0 4px 10px rgba(77, 44, 28, 0.6);
+}
+
+.container-section h3 {
+  color: #4d2c1c;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.info-section p {
+  font-size: 17px;
+  line-height: 1.6;
+  color: #4d2c1c;
+}
+
+/* TIMELINE */
+.timeline-section {
+  background: #fdf8f3;
+  padding: 60px 20px;
+}
+
+.timeline-section h3 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 40px;
+  color: #4d2c1c;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.timeline-text h4 {
+  font-size: 22px;
+  color: #a52a2a;
+  margin-bottom: 10px;
+}
+
+.timeline-text p {
+  font-size: 16px;
+  color: #333;
+}
+
+/* TIMELINE - imagens fixas 300x300 */
+.timeline-img img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+  display: block;
+  margin: auto; /* centraliza a imagem */
+}
+
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .timeline-item {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  font-size: 12px;
+  color: white;
+  background-color: #b30000;
+  padding: 30px;
+}

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Fala Chef</title>
+</head>
+<body>
+<!-- HEADER -->
+  <header>
+    <div class="header-container">
+      <div class="back-btn">
+        <a href="../../index.html"><img src="../../images/seta.png" alt="Voltar"></a>
+      </div>
+      <div class="logo">
+        <img src="../../images/falachef.png" alt="Fala Chef">
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li>
+          <a href="#">Receitas ▼</a>
+          <ul class="dropdown">
+            <li><a href="../../receitas/doce/index.html">Doces</a></li>
+            <li><a href="../../receitas/salgado/index.html">Salgados</a></li>
+          </ul>
+        </li>
+        <li><a href="../../arte/artecultura.html">Arte e Cultura</a></li>
+        <li><a href="../../noticias/index.html">Notícias</a></li>
+        <li><a href="../../drinks/index.html">Drinks</a></li>
+        <li><a href="../../php/nadispensa.php">Na Despensa</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<div class="main-content">
+  <div class="recipes-page-title">
+    <h2>Brigadeiros - Tipos e Sabores</h2>
+    <p>Saiba mais sobre o doce mais popular do Brasil</p>
+  </div>
+    <!-- Seções dentro do recipes-section -->
+    <div class="recipes-section">
+
+  <section class="slider-container">
+    <div class="slider-images">
+      <div class="slider-img" data-id="tradicional">
+        <img src="../../images/brigadeiro.jpg" alt="Brigadeiro Tradicional" />
+        <h1>Tradicional</h1>
+      </div>
+      <div class="slider-img" data-id="beijinho">
+        <img src="../../images/beijinho.jpg" alt="Beijinho" />
+        <h1>Beijinho</h1>
+      </div>
+      <div class="slider-img" data-id="cafe">
+        <img src="../../images/cafe.jpg" alt="Brigadeiro de Café" />
+        <h1>Café</h1>
+      </div>
+      <div class="slider-img active" data-id="chocolate">
+        <img src="../../images/chocolate.jpg" alt="Brigadeiro de Chocolate" />
+        <h1>Chocolate</h1>
+      </div>
+      <div class="slider-img" data-id="paçoca">
+        <img src="../../images/pacoca.jpg" alt="Brigadeiro de Paçoca" />
+        <h1>Paçoca</h1>
+      </div>
+      <div class="slider-img" data-id="limao">
+        <img src="../../images/limao.jpg" alt="Brigadeiro de Limão" />
+        <h1>Limão</h1>
+      </div>
+      <div class="slider-img" data-id="maracuja">
+        <img src="../../images/maracuja.jpg" alt="Brigadeiro de Maracujá" />
+        <h1>Maracujá</h1>
+      </div>
+    </div>
+  </section>
+
+  <!-- Detalhes exibidos ao clicar -->
+   <div id="containerdeTudo"  class="containerdeTudo">
+  <div id="tradicional" class="brigadeiro-detalhes">
+    <h2>Brigadeiro Tradicional</h2>
+    <p>O brigadeiro tradicional é o mais clássico e amado do Brasil. Feito com leite condensado, chocolate em pó, manteiga e granulado de chocolate, é a estrela de qualquer festa.</p>
+    <h3>Ingredientes</h3>
+    <ul>
+      <p>1 lata de leite condensado</p>
+      <p>7 colheres de sopa de achocolatado em pó</p>
+      <p>1 colher de sopa de manteiga</p>
+      <p>Granulado de chocolate para enrolar</p>
+    </ul>
+  </div>
+
+  <div id="beijinho" class="brigadeiro-detalhes">
+    <h2>Beijinho</h2>
+    <p>O beijinho é feito com leite condensado, coco ralado e manteiga, finalizado com coco ralado. Leve, refrescante e irresistível!</p>
+    <h3>Ingredientes</h3>
+    <ul>
+      <p>1 lata de leite condensado</p>
+      <p>7 colheres de sopa de coco ralado</p>
+      <p>1 colher de sopa de manteiga</p>
+      <p>Coco ralado para enrolar</p>
+    </ul>
+  </div>
+
+  <div id="cafe" class="brigadeiro-detalhes">
+    <h2>Brigadeiro de Café</h2>
+    <p>Feito com leite condensado, café solúvel ou forte coado, tem sabor intenso e aromático, ideal para quem ama café.</p>
+    <h3>Ingredientes</h3>
+    <ul>
+      <p>1 lata de leite condensado</p>
+      <p>7 colheres de sopa de café solúvel</p>
+      <p>1 colher de sopa de manteiga</p>
+      <p>Granulado de chocolate para enrolar</p>
+    </ul>
+  </div>
+
+  <div id="chocolate" class="brigadeiro-detalhes active">
+    <h2>Brigadeiro de Chocolate</h2>
+    <p>Versão mais intensa e cremosa. Feito com chocolate meio amargo ou ao leite, leite condensado, manteiga e, às vezes, creme de leite.</p>
+    <h3>Ingredientes</h3>
+    <ul>
+      <p>1 lata de leite condensado</p>
+      <p>7 colheres de sopa de achocolatado em pó</p>
+      <p>1 colher de sopa de manteiga</p>
+      <p>Granulado de chocolate para enrolar</p>
+    </ul>
+  </div>
+
+  <div id="paçoca" class="brigadeiro-detalhes">
+    <h2>Brigadeiro de Paçoca</h2>
+   
+    <p>Feito com leite condensado, manteiga e paçoca triturada. Textura única e sabor marcante de amendoim.</p>
+    <h3>Ingredientes</h3>
+    <ul>
+      <p>1 lata de leite condensado</p>
+      <p>7 colheres de sopa de paçoca triturada</p>
+      <p>1 colher de sopa de manteiga</p>
+      <p>Paçoca triturada para enrolar</p>
+    </ul>
+  </div>
+
+  <div id="limao" class="brigadeiro-detalhes">
+    <h2>Brigadeiro de Limão</h2>
+    <p>Feito com leite condensado, suco e raspas de limão. Refrescante, equilibrando doce e cítrico.</p>
+    <h3>Ingredientes</h3>
+    <ul>
+      <p>1 lata de leite condensado</p>
+      <p>7 colheres de sopa de suco de limão</p>
+      <p>Raspas de limão para decorar</p>
+    </ul>
+  </div>
+
+  <div id="maracuja" class="brigadeiro-detalhes">
+    <h2>Brigadeiro de Maracujá</h2>
+    <p>Combina a cremosidade tradicional com o sabor tropical e ácido da fruta. Uma explosão exótica!</p>
+    <br><br>
+    <h3>Ingredientes</h3>
+    <ul>
+      <p>1 lata de leite condensado</p>
+      <p>7 colheres de sopa de suco de maracujá</p>
+      <p>Raspas de maracujá para decorar</p>
+    </ul>
+  </div>
+
+  <!-- IMPACTO -->
+<section id="impacto" class="container-section">
+  <h3>Impacto</h3>
+  <p>O brigadeiro vai além de um simples doce: ele representa acolhimento, união e celebrações. Presente em festas de aniversário, casamentos e até em momentos simples do dia a dia, o brigadeiro conquistou espaço afetivo no coração dos brasileiros.</p>
+</section>
+
+<!-- ECONOMIA -->
+<section id="economia" class="container-section">
+  <h3>Economia</h3>
+  <p>O brigadeiro também movimenta a economia, sendo fonte de renda para milhares de pessoas. Desde pequenos empreendedores que vendem unidades nas ruas até confeitarias especializadas, ele gera oportunidades e fortalece o mercado gastronômico.</p>
+</section>
+
+<!-- CULTURA -->
+<section id="cultura" class="container-section">
+  <h3>Cultura</h3>
+  <p>Mais do que um doce, o brigadeiro faz parte da cultura brasileira. Ele está inserido em festas típicas, eventos escolares e reuniões familiares, simbolizando celebração e pertencimento.</p>
+</section>
+
+<!-- HISTÓRIA -->
+<section id="historia" class="container-section">
+  <h3>História</h3>
+  <p>O brigadeiro surgiu na década de 1940, durante a campanha presidencial do Brigadeiro Eduardo Gomes. Inicialmente como uma alternativa às guloseimas que estavam em falta no pós-guerra, rapidamente se tornou o doce queridinho do país.</p>
+</section>
+
+<!-- INGREDIENTES -->
+<section id="ingredientes" class="container-section">
+  <h3>Ingredientes</h3>
+  <p>A receita tradicional leva leite condensado, manteiga e chocolate em pó. Com o tempo, surgiram inúmeras variações com sabores diferenciados, coberturas criativas e até versões gourmet.</p>
+</section>
+
+
+<!-- PONTOS -->
+<section id="pontos" class="timeline-section">
+  <h3>Pontos do Brigadeiro</h3>
+  <div class="timeline">
+    
+    <!-- Ponto Mole -->
+    <div class="timeline-item">
+      <div class="timeline-text">
+        <h4>Ponto Mole</h4>
+        <p>Indicado para coberturas de bolos e recheios. A consistência é cremosa e o brigadeiro não desgruda totalmente do fundo da panela.</p>
+      </div>
+      <div class="timeline-img">
+        <img src="../../images/cobertura.jpg" alt="Ponto Mole">
+      </div>
+    </div>
+
+    <!-- Ponto Enrolar -->
+    <div class="timeline-item">
+      <div class="timeline-img">
+        <img src="../../images/colher.jpg" alt="Ponto de Enrolar">
+      </div>
+      <div class="timeline-text">
+        <h4>Ponto de Enrolar</h4>
+        <p>O mais tradicional. O brigadeiro desgruda totalmente da panela, permitindo modelar bolinhas perfeitas para festas.</p>
+      </div>
+    </div>
+
+    <!-- Ponto de Colher -->
+    <div class="timeline-item">
+      <div class="timeline-text">
+        <h4>Ponto de Colher</h4>
+        <p>Mais cremoso, servido em copinhos. Perfeito para consumo individual, festas ou como sobremesa prática.</p>
+      </div>
+      <div class="timeline-img">
+        <img src="../../images/cremoso.jpg" alt="Ponto de Colher">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+     
+  <footer>
+    © 2025 - Fala Chef™ - Todos os direitos reservados
+  </footer>
+
+  <script src="../brigadeiro/script.js"></script>
+</body>
+
+
+

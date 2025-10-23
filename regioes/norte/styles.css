@@ -1,0 +1,227 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  background: #fdf6ec;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER */
+header {
+  background: #F0E6DA;
+  padding: 10px 0 0 0;
+  text-align: center;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.back-btn {
+  position: absolute;
+  left: 20px;
+}
+
+.back-btn img {
+  width: 35px;
+}
+
+header .logo img {
+  max-width: 180px;
+}
+
+/* MENU */
+nav {
+  margin-top: 10px;
+  border-top: 1px solid #C2A962;
+  border-bottom: 1px solid #C2A962;
+  padding: 8px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  position: relative;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 6px 10px;
+  display: inline-block;
+}
+
+nav ul li a:hover {
+  color: #a52a2a;
+}
+
+/* DROPDOWN */
+nav ul li .dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #F0E6DA;
+  border: 1px solid #C2A962;
+  border-radius: 5px;
+  min-width: 180px;
+  z-index: 10;
+}
+
+nav ul li .dropdown li {
+  width: 100%;
+}
+
+nav ul li .dropdown li a {
+  display: block;
+  padding: 10px;
+  font-size: 14px;
+  color: #000;
+}
+
+nav ul li .dropdown li a:hover {
+  background: #C2A962;
+  color: white;
+  border-radius: 5px;
+}
+
+nav ul li:hover .dropdown {
+  display: block;
+}
+
+/* ===== PAGINA RECEITAS DE OUTUBRO ===== */
+
+/* Título da página */
+.recipes-page-title {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.recipes-page-title h2 {
+  font-size: 28px;
+  color: #6a4a2b;
+  font-weight: bold;
+}
+
+.recipes-page-title p {
+  font-size: 16px;
+  color: #4d2c1c;
+  margin-top: 5px;
+}
+
+.recipes-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 cards por linha */
+  gap: 30px;
+  padding: 20px;
+  background-color: #f7f0e6;
+  border-top: 1px solid #c2a962;
+  border-bottom: 1px solid #c2a962;
+  flex-grow: 1;
+}
+
+/* Cards de receita */
+.recipe-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background-color: #fff8f0;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.recipe-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+
+.recipe-card:hover img {
+  opacity: 0.9;
+}
+
+.recipe-info {
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.recipe-info h4 {
+  font-size: 14px;
+  color: #6a4a2b;
+  margin: 0 0 10px 0;
+}
+
+.recipe-info a {
+  font-size: 14px;
+  color: #2e5926;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid #2e5926;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.recipe-info a:hover {
+  background-color: #2e5926;
+  color: white;
+}
+
+.recipe-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .recipes-section {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards por linha em tablets */
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .recipes-section {
+    grid-template-columns: 1fr; /* 1 card por linha no mobile */
+  }
+
+  .recipe-card {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 12px;
+  color: white;
+  background-color: #b30000;
+  padding: 15px 0;
+  margin-top: auto;
+}
